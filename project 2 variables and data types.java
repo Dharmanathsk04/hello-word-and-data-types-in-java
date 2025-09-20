@@ -1,14 +1,14 @@
-import java.util.Scanner;  // Import Scanner for input
+import java.util.Scanner;  
 
 public class Calculator {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // Variables and Data Types
+    
         double num1, num2, result;
         char operator;
 
-        // Input
+     
         System.out.print("Enter first number: ");
         num1 = sc.nextDouble();
 
@@ -18,7 +18,6 @@ public class Calculator {
         System.out.print("Choose an operator (+, -, *, /): ");
         operator = sc.next().charAt(0);
 
-        // Calculation using switch
         switch (operator) {
             case '+':
                 result = num1 + num2;
@@ -51,3 +50,4 @@ public class Calculator {
         sc.close();  // Close scanner
     }
 }
+
